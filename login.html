@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+           :root {
+            --primarycolor: #0e6253;
+            --secondarycolor: #ffc105;
+            --whitecolor: #fff;
+            --blackcolor: #222;
+            --softgreencolor: #d9f2ee;
+            --drakgreycolor: #a7a7a7;
+            --greycolor: #f5f5f5;
+         }
+
+
+        body {
+            font-family: 'open sans', sans-serif;
+            background-color: #d9f2ee;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--whitecolor);
+            border-radius: 70px;
+
+           
+        }
+        button {
+            background-color: var(--secondarycolor);
+            color: var(--whitecolor);
+            border: none;
+            width: 120px;
+            border-radius: 20px;
+            cursor: pointer;
+            
+        }
+
+        button:hover {
+            background-color: var(--primarycolor);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Login</h1>
+        <div class="login-form">
+            <h4>email</h4>
+            <div class="email-input">
+                <i class="fas fa-user"></i>
+                <input type="email" placeholder="type your email" id="email">
+            </div>
+            <h4>password</h4>
+            <div class="password">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="type your password" id="password">
+            </div>
+        </div>
+        <button class="login-btn" onclick="func()">
+            LOGIN
+        </button>
+    </section>
+    <script>
+        function func(){
+
+            var text = document.getElementById("email").value;
+            var pass = document.getElementById("password").value;
+            if (email.endswith("anits.edu.in") && password.isalum()){
+                alert("success full");
+
+                window.location.assign('payment.html');
+            }
+            else{
+                alert("wrong entery invalid");
+            }
+        }
+    </script>
+</body>
+</html>

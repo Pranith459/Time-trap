@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .order-details {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .order-details th, .order-details td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .order-details th {
+            background-color: #f2f2f2;
+        }
+
+        .thank-you {
+            text-align: center;
+            font-size: 1.2em;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Order Confirmation</h1>
+    </header>
+
+    <div class="container">
+        <h2>Order Details</h2>
+
+        <table class="order-details">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>pizza</td>
+                <td>2</td>
+                <td>250.00</td>
+            </tr>
+            <tr>
+                <td>chicken-frid-rice</td>
+                <td>1</td>
+                <td>200.00</td>
+            </tr>
+            <!-- Add more rows for additional products -->
+        </table>
+
+        <p>Total Amount: 450.00</p>
+
+        <div class="thank-you">
+            <p>Thank you for your order!</p>
+        </div>
+    </div>
+
+</body>
+</html>
